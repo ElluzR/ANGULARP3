@@ -1,0 +1,28 @@
+<div class="Imagenes">
+  <img src="../../assets/buscador.gif" alt="Buscador de Imagenes" width="100%" height="380px">
+</div>
+
+<div class="s01">
+  <form #nossoForm="ngForm" (ngSubmit)="buscar(nossoForm.form)">
+    <fieldset>
+      <h1>Buscador Imagenes Gifts</h1>
+    </fieldset>
+
+    <br>
+
+    <div class="inner-form">
+      <div class="input-field first-wrap">
+        <input id="search" type="text" placeholder="imagem que você quer encontrar" name="termo"[(ngModel)]="termo"/>
+      </div>
+
+     <br>
+
+      <div class="input-field third-wrap">
+        <button class="btn-search" type="submit">Buscar</button>
+      </div>
+    </div>
+  </form>
+  <br>
+  <p>&copy; 2020. Todos los Derechos Reservados</p>
+</div>
+
